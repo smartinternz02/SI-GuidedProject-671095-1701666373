@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Price Prediction - Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Provide Details</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+        <label for="shape">Shape:</label>
+        <input type="text" id="shape" name="shape" required><br>
+        <label for="size">Size:</label>
+        <input type="text" id="size" name="size" required><br>
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required><br>
+        <label for="fancy_color_dominant_color">Fancy Color Dominant Color:</label>
+        <input type="text" id="fancy_color_dominant_color" name="fancy_color_dominant_color" required><br>
+        <label for="fancy_color_secondary_color">Fancy Color Secondary Color:</label>
+        <input type="text" id="fancy_color_secondary_color" name="fancy_color_secondary_color" required><br>
+        <label for="fancy_color_overtone">Fancy Color Overtone:</label>
+        <input type="text" id="fancy_color_overtone" name="fancy_color_overtone" required><br>
+        <label for="fancy_color_intensity">Fancy Color Intensity:</label>
+        <input type="text" id="fancy_color_intensity" name="fancy_color_intensity" required><br>
+        <label for="clarity">Clarity:</label>
+        <input type="text" id="clarity" name="clarity" required><br>
+        <label for="cut">Cut:</label>
+        <input type="text" id="cut" name="cut" required><br>
+        <label for="symmetry">Symmetry:</label>
+        <input type="text" id="symmetry" name="symmetry" required><br>
+        <label for="polish">Polish:</label>
+        <input type="text" id="polish" name="polish" required><br>
+        <label for="depth_percent">Depth Percent:</label>
+        <input type="text" id="depth_percent" name="depth_percent" required><br>
+        <label for="table_percent">Table Percent:</label>
+        <input type="text" id="table_percent" name="table_percent" required><br>
+        <label for="meas_length">Measurement Length:</label>
+        <input type="text" id="meas_length" name="meas_length" required><br>
+        <label for="meas_width">Measurement Width:</label>
+        <input type="text" id="meas_width" name="meas_width" required><br>
+        <label for="meas_depth">Measurement Depth:</label>
+        <input type="text" id="meas_depth" name="meas_depth" required><br>
+        <label for="girdle_min">Girdle Minimum:</label>
+        <input type="text" id="girdle_min" name="girdle_min" required><br>
+        <label for="girdle_max">Girdle Maximum:</label>
+        <input type="text" id="girdle_max" name="girdle_max" required><br>
+        <label for="culet_size">Culet Size:</label>
+        <input type="text" id="culet_size" name="culet_size" required><br>
+        <label for="culet_condition">Culet Condition:</label>
+        <input type="text" id="culet_condition" name="culet_condition" required><br>
+        <label for="fluor_color">Fluorescence Color:</label>
+        <input type="text" id="fluor_color" name="fluor_color" required><br>
+        <label for="fluor_intensity">Fluorescence Intensity:</label>
+        <input type="text" id="fluor_intensity" name="fluor_intensity" required><br>
+        <label for="lab">Lab:</label>
+        <input type="text" id="lab" name="lab" required><br>
+        <label for="eye_clean">Eye Clean:</label>
+        <input type="text" id="eye_clean" name="eye_clean" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
